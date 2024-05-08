@@ -17,7 +17,9 @@ class Contact:
         self.phone_number = phone_number
         self.email = email
 
-    def totaltrack()
+    def totaltrack():
+        print()
+        
 
 # Create at least two instances of the Contact class with different data.
 
