@@ -25,16 +25,13 @@ class Car:
         
     def drive(self, distance):
         if (self.is_engine_on):
-            print(f"The {Car} has drivem {distance}KM")
+            print(f"The {self.brand} has driven {distance}KM")
             self.odometer += distance
         else:
-            print("Cannot Drive, engine is not on")
+            print(f"{self.brand} Cannot Drive, engine is not on")
 
 # Add another property to the Car class called "odometer".
 # This property should be initialised to 0.
-
-
-
 # Create two Car objects. One should be a red Toyota and the other a blue Ford.
 
 Toyota = Car("Red", "Toyota")
@@ -54,6 +51,6 @@ Toyota.drive(100)
 Miata.drive(100)
 
 # Print the brand, odometer and colour of both cars.
-
-print(Toyota, odometer, colour)
-print(Miata,)
+print()
+print(f"The Car is a {Toyota.brand}, it is {Toyota.color}")
+print(f"The Car is a {Miata.brand}, it is {Miata.color}")
