@@ -12,13 +12,14 @@
 # Add a class attribute to keep track of the total number of contacts.
 
 class Contact:
+    total_contacts = 0
+    
     def __init__(self, name, phone_number, email):
-        self.name = name
-        self.phone_number = phone_number
-        self.email = email
+            self.name = name
+            self.phone_number = phone_number
+            self.email = email
+            Contact.total_contacts += 1
 
-    def totaltrack():
-        print()
         
 
 # Create at least two instances of the Contact class with different data.
