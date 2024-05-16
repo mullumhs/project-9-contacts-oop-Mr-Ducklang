@@ -32,6 +32,12 @@ class Contact:
     @classmethod
     def get_contact_count(cls):
         return cls.total_contacts
+    
+    def __str__(self):
+        return (f"Employee: {self.name}\n" + 
+            f"Email: {self.email}\n" + 
+            f"Phone Number: {self.phone_number}\n" + 
+            "-" * 40)
             
 Foghorn = Contact("Foghorn Leghorn", "+1 394 392 891", "foghorn30@gmail.com")
 Bugs = Contact("Bugs Bunny", "+1 342 452 478", "bugs30@icloud.com") 
@@ -40,3 +46,5 @@ Foghorn.check_email()
 Bugs.check_email()
 
 print(f"The total number of contacts is {Contact.get_contact_count()}")
+print()
+print()
