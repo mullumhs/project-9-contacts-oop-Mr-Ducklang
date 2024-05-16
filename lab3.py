@@ -30,11 +30,13 @@ class Contact:
          print(f"{self.email} is invalid, no '@' detected!")
          
     @classmethod
-    def get_contact_count():
-        return Contact.total_contacts
+    def get_contact_count(cls):
+        return cls.total_contacts
             
 Foghorn = Contact("Foghorn Leghorn", "+1 394 392 891", "foghorn30@gmail.com")
 Bugs = Contact("Bugs Bunny", "+1 342 452 478", "bugs30@icloud.com") 
 
 Foghorn.check_email()
 Bugs.check_email()
+
+print(f"The total number of contacts is {Contact.get_contact_count()}")
